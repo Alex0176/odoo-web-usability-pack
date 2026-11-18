@@ -1,0 +1,190 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_usability_pack
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-18 08:54+0000\n"
+"PO-Revision-Date: 2026-11-18 08:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: web_usability_pack
+#: model:ir.model.fields,help:web_usability_pack.field_res_config_settings__web_usability_pager_extras
+msgid ""
+"Add a page size selector (20, 40, 80, 200) and buttons to jump to the first "
+"and to the last page to the pagers."
+msgstr "Ergänzt die Seitenwechsler um eine Auswahl der Seitengröße (20, 40, 80, 200) und um Schaltflächen für den Sprung zur ersten und zur letzten Seite."
+
+#. module: web_usability_pack
+#: model:ir.model,name:web_usability_pack.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: web_usability_pack
+#. odoo-javascript
+#: code:addons/web_usability_pack/static/src/pager_extras/pager_extras.xml:0
+msgid "First page"
+msgstr "Erste Seite"
+
+#. module: web_usability_pack
+#: model:ir.model.fields,field_description:web_usability_pack.field_res_config_settings__web_usability_form_full_width
+msgid "Full-Width Forms"
+msgstr "Formulare in voller Breite"
+
+#. module: web_usability_pack
+#: model:ir.model,name:web_usability_pack.model_ir_http
+msgid "HTTP Routing"
+msgstr "HTTP-Routing"
+
+#. module: web_usability_pack
+#: model:ir.model.fields,field_description:web_usability_pack.field_res_config_settings__web_usability_jump_invalid
+msgid "Jump to Missing Required Fields"
+msgstr "Zum fehlenden Pflichtfeld springen"
+
+#. module: web_usability_pack
+#. odoo-javascript
+#: code:addons/web_usability_pack/static/src/pager_extras/pager_extras.xml:0
+msgid "Last page"
+msgstr "Letzte Seite"
+
+#. module: web_usability_pack
+#: model:ir.model.fields,help:web_usability_pack.field_res_config_settings__web_usability_form_full_width
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid "Let form sheets use the whole available width on large screens."
+msgstr "Formulare nutzen auf großen Bildschirmen die gesamte verfügbare Breite."
+
+#. module: web_usability_pack
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid "Mark the title of the browser tab while a form has unsaved changes."
+msgstr "Markiert den Titel des Browser-Tabs, solange ein Formular ungespeicherte Änderungen hat."
+
+#. module: web_usability_pack
+#: model:ir.model.fields,help:web_usability_pack.field_res_config_settings__web_usability_unsaved_title
+msgid ""
+"Mark the title of the browser tab while the form that is displayed has "
+"unsaved changes."
+msgstr "Markiert den Titel des Browser-Tabs, solange das angezeigte Formular ungespeicherte Änderungen hat."
+
+#. module: web_usability_pack
+#: model:ir.model.fields,field_description:web_usability_pack.field_res_config_settings__web_usability_pager_extras
+msgid "Page Size and First / Last Page in Pagers"
+msgstr "Seitengröße und erste / letzte Seite im Seitenwechsler"
+
+#. module: web_usability_pack
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid "Page size selector and buttons for the first and the last page."
+msgstr "Auswahl der Seitengröße und Schaltflächen für die erste und die letzte Seite."
+
+#. module: web_usability_pack
+#: model:ir.model.fields,field_description:web_usability_pack.field_res_config_settings__web_usability_bottom_pager
+msgid "Pager at the Bottom"
+msgstr "Seitenwechsler auch unten"
+
+#. module: web_usability_pack
+#. odoo-javascript
+#: code:addons/web_usability_pack/static/src/pager_extras/pager_extras.xml:0
+msgid "Records per page"
+msgstr "Datensätze pro Seite"
+
+#. module: web_usability_pack
+#. odoo-javascript
+#: code:addons/web_usability_pack/static/src/form_undo/form_undo.xml:0
+msgid "Redo"
+msgstr "Wiederherstellen"
+
+#. module: web_usability_pack
+#. odoo-javascript
+#: code:addons/web_usability_pack/static/src/form_undo/form_undo.xml:0
+msgid "Redo (Ctrl+Y)"
+msgstr "Wiederherstellen (Strg+Y)"
+
+#. module: web_usability_pack
+#: model:ir.model.fields,help:web_usability_pack.field_res_config_settings__web_usability_bottom_pager
+msgid ""
+"Repeat the pager below lists, kanban views, forms and sub-lists so that "
+"users do not have to scroll back up."
+msgstr "Zeigt den Seitenwechsler zusätzlich unter Listen, Kanban-Ansichten, Formularen und Unterlisten, damit niemand nach oben scrollen muss."
+
+#. module: web_usability_pack
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid "Repeat the pager below lists, kanban views, forms and sub-lists."
+msgstr "Zeigt den Seitenwechsler zusätzlich unter Listen, Kanban-Ansichten, Formularen und Unterlisten."
+
+#. module: web_usability_pack
+#: model:ir.model.fields,help:web_usability_pack.field_res_config_settings__web_usability_ctrl_save
+msgid ""
+"Save the current form with Ctrl+S instead of opening the browser dialog for "
+"saving the web page."
+msgstr "Speichert das aktuelle Formular mit Strg+S, statt den Browser-Dialog zum Speichern der Webseite zu öffnen."
+
+#. module: web_usability_pack
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid "Save the current form with Ctrl+S."
+msgstr "Speichert das aktuelle Formular mit Strg+S."
+
+#. module: web_usability_pack
+#: model:ir.model.fields,field_description:web_usability_pack.field_res_config_settings__web_usability_ctrl_save
+msgid "Save with Ctrl+S"
+msgstr "Speichern mit Strg+S"
+
+#. module: web_usability_pack
+#. odoo-javascript
+#: code:addons/web_usability_pack/static/src/form_undo/form_undo.xml:0
+msgid "Undo"
+msgstr "Rückgängig"
+
+#. module: web_usability_pack
+#. odoo-javascript
+#: code:addons/web_usability_pack/static/src/form_undo/form_undo.xml:0
+msgid "Undo (Ctrl+Z)"
+msgstr "Rückgängig (Strg+Z)"
+
+#. module: web_usability_pack
+#: model:ir.model.fields,field_description:web_usability_pack.field_res_config_settings__web_usability_form_undo
+msgid "Undo / Redo in Forms"
+msgstr "Rückgängig / Wiederherstellen in Formularen"
+
+#. module: web_usability_pack
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid ""
+"Undo and redo unsaved changes in forms with Ctrl+Z, Ctrl+Y and two buttons."
+msgstr "Nicht gespeicherte Änderungen in Formularen mit Strg+Z, Strg+Y und zwei Schaltflächen zurücknehmen und wiederherstellen."
+
+#. module: web_usability_pack
+#: model:ir.model.fields,help:web_usability_pack.field_res_config_settings__web_usability_form_undo
+msgid ""
+"Undo and redo unsaved field changes in form views (Ctrl+Z, Ctrl+Y or "
+"Ctrl+Shift+Z and two buttons)."
+msgstr "Nicht gespeicherte Feldänderungen in Formularansichten zurücknehmen und wiederherstellen (Strg+Z, Strg+Y bzw. Strg+Umschalt+Z und zwei Schaltflächen)."
+
+#. module: web_usability_pack
+#: model:ir.model.fields,field_description:web_usability_pack.field_res_config_settings__web_usability_unsaved_title
+msgid "Unsaved Changes in the Browser Tab"
+msgstr "Ungespeicherte Änderungen im Browser-Tab"
+
+#. module: web_usability_pack
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid "Usability"
+msgstr "Bedienkomfort"
+
+#. module: web_usability_pack
+#: model:ir.model.fields,help:web_usability_pack.field_res_config_settings__web_usability_jump_invalid
+msgid ""
+"When a form cannot be saved because of missing required fields, open the tab"
+" of the first one, scroll to it and focus it."
+msgstr "Lässt sich ein Formular wegen fehlender Pflichtfelder nicht speichern, wird der Reiter des ersten fehlenden Feldes geöffnet, dorthin gescrollt und das Feld fokussiert."
+
+#. module: web_usability_pack
+#: model_terms:ir.ui.view,arch_db:web_usability_pack.res_config_settings_view_form
+msgid ""
+"When saving fails, open the tab of the first missing required field and "
+"focus it."
+msgstr "Schlägt das Speichern fehl, wird der Reiter des ersten fehlenden Pflichtfeldes geöffnet und das Feld fokussiert."

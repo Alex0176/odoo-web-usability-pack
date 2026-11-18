@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Biricon IT Services GmbH
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<templates xml:space="preserve">
+
+    <t t-name="web_usability_pack.BottomPager">
+        <div t-if="isVisible" class="o_wup_bottom_pager d-flex justify-content-end align-items-center flex-shrink-0 px-3 py-1 border-top text-nowrap d-print-none">
+            <Pager t-props="bottomPagerProps"/>
+        </div>
+    </t>
+
+    <!-- list, kanban and form views (every view that feeds the pager of the control panel) -->
+    <t t-inherit="web.Layout" t-inherit-mode="extension">
+        <xpath expr="//main" position="after">
+            <t t-if="props.display.controlPanel" t-component="wupBottomPager"/>
+        </xpath>
+    </t>
+
+</templates>

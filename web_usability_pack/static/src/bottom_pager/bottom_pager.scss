@@ -1,0 +1,15 @@
+// Copyright 2026 Biricon IT Services GmbH
+// License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+.o_wup_bottom_pager {
+    background-color: $o-view-background-color;
+    min-height: 2.25rem;
+
+    .o_pager_counter {
+        margin-right: map-get($spacers, 1);
+    }
+}
+
+.o_wup_x2m_bottom_pager .o_pager_counter {
+    margin-right: map-get($spacers, 1);
+}

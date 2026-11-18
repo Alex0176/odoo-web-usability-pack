@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Biricon IT Services GmbH
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<templates xml:space="preserve">
+
+    <t t-inherit="web.Pager" t-inherit-mode="extension">
+        <xpath expr="//span[hasclass('o_pager_counter')]" position="before">
+            <select
+                t-if="wupShowPageSize"
+                class="o_wup_pager_size o_input w-auto align-self-center d-print-none"
+                t-att-disabled="state.isDisabled"
+                t-on-change="wupOnPageSizeChange"
+                t-on-click.stop=""
+                data-tooltip="Records per page"
+                aria-label="Records per page">
+                <option t-foreach="wupPageSizes" t-as="size" t-key="size" t-att-value="size" t-att-selected="size === props.limit" t-esc="size"/>
+            </select>
+        </xpath>
+        <xpath expr="//span[hasclass('btn-group')]" position="attributes">
+            <attribute name="t-att-class">{ o_wup_pager_extras: wupShowExtras }</attribute>
+        </xpath>
+        <xpath expr="//button[hasclass('o_pager_previous')]" position="before">
+            <button
+                t-if="wupShowExtras"
+                type="button"
+                class="btn btn-secondary o_wup_pager_first px-2 rounded-start"
+                aria-label="First page"
+                data-tooltip="First page"
+                tabindex="-1"
+                t-att-disabled="state.isDisabled or wupIsFirstPage"
+                t-on-click.stop="() => this.wupGoToFirstPage()">
+                <i class="fa fa-angle-double-left"/>
+            </button>
+        </xpath>
+        <xpath expr="//button[hasclass('o_pager_next')]" position="after">
+            <button
+                t-if="wupShowExtras"
+                type="button"
+                class="btn btn-secondary o_wup_pager_last px-2 rounded-end"
+                aria-label="Last page"
+                data-tooltip="Last page"
+                tabindex="-1"
+                t-att-disabled="state.isDisabled or wupIsLastPage"
+                t-on-click.stop="() => this.wupGoToLastPage()">
+                <i class="fa fa-angle-double-right"/>
+            </button>
+        </xpath>
+    </t>
+
+</templates>

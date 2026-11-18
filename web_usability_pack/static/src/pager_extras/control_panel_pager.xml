@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Biricon IT Services GmbH
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<templates xml:space="preserve">
+
+    <!-- enable the extras on the pager of the control panel -->
+    <t t-inherit="web.ControlPanel" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_cp_pager')]/Pager" position="attributes">
+            <attribute name="wupExtras">'view'</attribute>
+        </xpath>
+    </t>
+
+</templates>

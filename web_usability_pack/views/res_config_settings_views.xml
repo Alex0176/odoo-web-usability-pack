@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Biricon IT Services GmbH
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.web.usability.pack</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='user_default_rights']" position="before">
+                <block title="Usability" id="web_usability_pack_settings">
+                    <setting
+                        id="web_usability_bottom_pager_setting"
+                        help="Repeat the pager below lists, kanban views, forms and sub-lists."
+                    >
+                        <field name="web_usability_bottom_pager" />
+                    </setting>
+                    <setting
+                        id="web_usability_form_undo_setting"
+                        help="Undo and redo unsaved changes in forms with Ctrl+Z, Ctrl+Y and two buttons."
+                    >
+                        <field name="web_usability_form_undo" />
+                    </setting>
+                    <setting
+                        id="web_usability_ctrl_save_setting"
+                        help="Save the current form with Ctrl+S."
+                    >
+                        <field name="web_usability_ctrl_save" />
+                    </setting>
+                    <setting
+                        id="web_usability_jump_invalid_setting"
+                        help="When saving fails, open the tab of the first missing required field and focus it."
+                    >
+                        <field name="web_usability_jump_invalid" />
+                    </setting>
+                    <setting
+                        id="web_usability_pager_extras_setting"
+                        help="Page size selector and buttons for the first and the last page."
+                    >
+                        <field name="web_usability_pager_extras" />
+                    </setting>
+                    <setting
+                        id="web_usability_unsaved_title_setting"
+                        help="Mark the title of the browser tab while a form has unsaved changes."
+                    >
+                        <field name="web_usability_unsaved_title" />
+                    </setting>
+                    <setting
+                        id="web_usability_form_full_width_setting"
+                        help="Let form sheets use the whole available width on large screens."
+                    >
+                        <field name="web_usability_form_full_width" />
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

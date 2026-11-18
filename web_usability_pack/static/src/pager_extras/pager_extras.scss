@@ -1,0 +1,17 @@
+// Copyright 2026 Biricon IT Services GmbH
+// License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+.o_pager {
+    .o_wup_pager_size {
+        min-width: 3.5rem;
+        cursor: pointer;
+    }
+
+    // previous / next are not the outer buttons of the group anymore
+    .o_wup_pager_extras {
+        > .o_pager_previous,
+        > .o_pager_next {
+            border-radius: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Biricon IT Services GmbH
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<templates xml:space="preserve">
+
+    <!-- one2many / many2many lists and kanbans inside forms -->
+    <t t-inherit="web.X2ManyField" t-inherit-mode="extension">
+        <!-- page size and first / last page on the standard pager as well -->
+        <xpath expr="//div[hasclass('o_cp_pager')]" position="attributes">
+            <attribute name="t-if">wupShowPager</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_cp_pager')]/Pager" position="attributes">
+            <attribute name="wupExtras">'x2many'</attribute>
+        </xpath>
+        <xpath expr="//KanbanRenderer" position="after">
+            <div t-if="wupShowBottomPager" class="o_wup_x2m_bottom_pager d-flex justify-content-end mt-2 text-nowrap d-print-none">
+                <t t-component="wupPager" t-props="pagerProps" wupExtras="'x2many'"/>
+            </div>
+        </xpath>
+    </t>
+
+</templates>

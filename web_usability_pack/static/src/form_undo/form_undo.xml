@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Biricon IT Services GmbH
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<templates xml:space="preserve">
+
+    <t t-name="web_usability_pack.UndoRedoButtons">
+        <div t-if="wupShowUndoButtons" class="o_wup_undo_redo d-flex align-items-center align-self-md-end d-print-none">
+            <button
+                type="button"
+                class="o_wup_undo btn btn-light border-0 px-1 py-0 lh-sm"
+                t-att-disabled="!wupUndoState.canUndo"
+                t-on-click.stop="() => this.wupUndo()"
+                data-tooltip="Undo (Ctrl+Z)"
+                aria-label="Undo">
+                <i class="fa fa-undo fa-fw"/>
+            </button>
+            <button
+                type="button"
+                class="o_wup_redo btn btn-light border-0 px-1 py-0 lh-sm"
+                t-att-disabled="!wupUndoState.canRedo"
+                t-on-click.stop="() => this.wupRedo()"
+                data-tooltip="Redo (Ctrl+Y)"
+                aria-label="Redo">
+                <i class="fa fa-repeat fa-fw"/>
+            </button>
+        </div>
+    </t>
+
+    <!-- form views with a control panel: next to the save / discard buttons -->
+    <t t-inherit="web.FormView" t-inherit-mode="extension">
+        <xpath expr="//FormStatusIndicator" position="after">
+            <t t-call="web_usability_pack.UndoRedoButtons"/>
+        </xpath>
+    </t>
+
+    <!-- form views in dialogs (default buttons): in the footer of the dialog -->
+    <t t-inherit="web.FormView.Buttons" t-inherit-mode="extension">
+        <xpath expr="." position="inside">
+            <t t-if="env.inDialog" t-call="web_usability_pack.UndoRedoButtons"/>
+        </xpath>
+    </t>
+
+</templates>
